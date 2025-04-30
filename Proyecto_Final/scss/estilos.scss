@@ -1,0 +1,145 @@
+//------------------------------------
+//          PATRON DE COLORES
+//------------------------------------
+$principal: #5846a2;
+$texto:rgb(0, 0, 0);
+
+/*---------------------------------------------
+SOBREESCRIBIENDO SOBRE LOS ESTILOS DE BOOTSTRAP
+-----------------------------------------------*/
+
+.bg-primary{
+  background-color: $principal !important;
+}
+
+.text-primary{
+  color: $principal !important;
+}
+
+.btn-primary{
+  background-color: $principal !important;
+  border-color: darken($principal,20%) !important;
+}
+.btn-primary:hover, 
+.bg-primary:focus {
+  background-color:darken($principal,20%) !important;
+}
+.btn-active{
+  background-color:darken($principal,20%)!important;
+  border-color: darken($principal,20%) !important;
+}
+
+
+/*------------------------------------
+ESTILOS DEL DISEÑO
+-------------------------------------*/
+
+html{
+    font-size: 14px;
+}
+body{
+  color:$texto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.card:hover{
+  box-shadow: 0 0 10px #101010a1;;
+}
+
+//------------------------------------
+//          ESTILOS FORO + ENCUESTA
+//------------------------------------
+
+.foro-encuesta {
+  background: linear-gradient(to right, lighten($principal, 15%), $principal); // Degradado personalizado
+  padding: 3rem 0;
+}
+
+/* Contenedores de foro y encuesta */
+.foro-contenedor,
+.encuesta-contenedor {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Títulos dentro de las tarjetas */
+.foro-contenedor h2,
+.encuesta-contenedor h2 {
+  font-weight: bold;
+  color: $principal;
+}
+
+/* Formulario general */
+.form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: $principal !important;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($principal, 20%) !important;
+  }
+}
+
+/* Botón de responder comentarios */
+.btn-responder {
+  background-color: $principal;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($principal, 15%);
+  }
+}
+
+/* Comentarios */
+.comentario {
+  margin-bottom: 20px;
+}
+
+/* Respuestas */
+.respuesta {
+  background-color: lighten($principal, 45%);
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Animaciones de enfoque en inputs */
+textarea:focus, 
+input:focus, 
+select:focus {
+  box-shadow: 0 0 5px lighten($principal, 10%);
+  outline: none;
+}
+
+/* Responsive ajustes */
+@media (max-width: 767px) {
+  .foro-contenedor, 
+  .encuesta-contenedor {
+    margin-bottom: 20px;
+  }
+}

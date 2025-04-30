@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*---------------------------------------------
+SOBREESCRIBIENDO SOBRE LOS ESTILOS DE BOOTSTRAP
+-----------------------------------------------*/
+.bg-primary {
+  background-color: #5846a2 !important; }
+
+.text-primary {
+  color: #5846a2 !important; }
+
+.btn-primary {
+  background-color: #5846a2 !important;
+  border-color: #31275b !important; }
+
+.btn-primary:hover,
+.bg-primary:focus {
+  background-color: #31275b !important; }
+
+.btn-active {
+  background-color: #31275b !important;
+  border-color: #31275b !important; }
+
+/*------------------------------------
+ESTILOS DEL DISEÑO
+-------------------------------------*/
+html {
+  font-size: 14px; }
+
+body {
+  color: black;
+  font-family: "Open Sans", sans-serif; }
+
+.card:hover {
+  box-shadow: 0 0 10px #101010a1; }
+
+.foro-encuesta {
+  background: linear-gradient(to right, #8272c2, #5846a2);
+  padding: 3rem 0; }
+
+/* Contenedores de foro y encuesta */
+.foro-contenedor,
+.encuesta-contenedor {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s, box-shadow 0.3s; }
+  .foro-contenedor:hover,
+  .encuesta-contenedor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); }
+
+/* Títulos dentro de las tarjetas */
+.foro-contenedor h2,
+.encuesta-contenedor h2 {
+  font-weight: bold;
+  color: #5846a2; }
+
+/* Formulario general */
+.form-control {
+  border-radius: 12px;
+  border: 1px solid #ccc; }
+
+/* Botones */
+.btn-primary {
+  background-color: #5846a2 !important;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s; }
+  .btn-primary:hover {
+    background-color: #31275b !important; }
+
+/* Botón de responder comentarios */
+.btn-responder {
+  background-color: #5846a2;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s; }
+  .btn-responder:hover {
+    background-color: #3b2f6d; }
+
+/* Comentarios */
+.comentario {
+  margin-bottom: 20px; }
+
+/* Respuestas */
+.respuesta {
+  background-color: #e1ddf0;
+  padding: 10px;
+  border-radius: 12px;
+  margin-top: 10px; }
+
+/* Animaciones de enfoque en inputs */
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 5px #7260bb;
+  outline: none; }
+
+/* Responsive ajustes */
+@media (max-width: 767px) {
+  .foro-contenedor,
+  .encuesta-contenedor {
+    margin-bottom: 20px; } }
+
+/*# sourceMappingURL=estilos.css.map */

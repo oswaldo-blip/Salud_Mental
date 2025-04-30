@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*---------------------------------------------
+SOBREESCRIBIENDO SOBRE LOS ESTILOS DE BOOTSTRAP
+-----------------------------------------------*/
+.bg-primary {
+  background-color: #51b662 !important; }
+
+.text-primary {
+  color: #51b662 !important; }
+
+.btn-primary {
+  background-color: #51b662 !important;
+  border-color: #30713b !important; }
+
+.btn-primary:hover,
+.bg-primary:focus {
+  background-color: #30713b !important; }
+
+.btn-active {
+  background-color: #30713b !important;
+  border-color: #30713b !important; }
+
+/*------------------------------------
+ESTILOS DEL DISEÑO
+-------------------------------------*/
+html {
+  font-size: 14px; }
+
+body {
+  color: black;
+  font-family: "Open Sans", sans-serif; }
+
+.card:hover {
+  box-shadow: 0 0 10px #101010a1; }
+
+/*# sourceMappingURL=estilos.css.map */
